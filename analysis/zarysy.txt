@@ -1,0 +1,13 @@
+Stworzenie prostego kalendarza z grafikiem obecności
+
+- backend na node.js
+- dane przechowywane w plikach np: https://github.com/typicode/lowdb
+- front w czymś innym niż angular (vuejs?)
+- ES6
+
+Elementy:
+- logowanie
+- log edycji grafika
+- kalendarz z widokiem tygodnia (mozliwość wybrania tygodnia)
+- panel edycji z możliwościa definiowania interwałów
+- mozliwość zmian tymczasowych (np. w danym terminie mam urlop; wypadly dodatkowe zajecia;)
