@@ -21,7 +21,7 @@ var HTML_PATH = {
         }
     },
     LESS_PATH = {
-        common: '../src/client/common',
+        common: '../src/client/common/style',
         input: '../src/client/*/*.less',
         output: {
             dev: '../dist/client'
@@ -77,7 +77,7 @@ gulp.task('less:dev', function() {
     return gulp.src(LESS_PATH.input)
         .pipe(sourcemaps.init())
         .pipe(less({
-            //paths: [path.resolve(LESS_PATH.common)]
+            paths: [path.resolve(LESS_PATH.common)]
         }))
         .pipe(sourcemaps.write())
         .pipe(rename(function (path) {
@@ -170,7 +170,7 @@ gulp.task('webpack:dev', function (callback) {
         if(err)
             throw new gutil.PluginError("webpack", err);
 
-        //console.log(stats.toString());
+        console.log(stats.toString());
     });
 
     callback();
