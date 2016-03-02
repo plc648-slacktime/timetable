@@ -1,6 +1,5 @@
-import Vue from 'lib/vue.js'
-import ttLoginForm from './components/login-form.vue'
-
+import Vue from 'vue';
+import ttLoginForm from './components/login-form.vue';
 
 new Vue({
 	el: 'body',
