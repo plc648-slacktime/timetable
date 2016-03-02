@@ -60,6 +60,12 @@ gulp.task('server', function () {
 		.pipe(gulp.dest('dist/server/'));
 });
 
+//CLEAN
+gulp.task('clean', function() {
+	return gulp.src('dist', {read: false})
+		.pipe(clean({force: true}));
+});
+
 gulp.task('server:watch', ['sever:restart'], function (callback) {
 	gulp.watch('src/shared/**/*', ['sever:restart']);
 	gulp.watch('src/server/**/*', ['sever:restart']);
