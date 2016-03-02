@@ -1,0 +1,7 @@
+- npm install
+- npm run dev
+
+adres:
+127.0.0.1:8080/*/*.html
+np:
+127.0.0.1:8080/main/main.html
